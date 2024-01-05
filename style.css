@@ -1,0 +1,41 @@
+@font-face {
+    font-family: '29LT Bukra';
+    src: url('./fonts/29ltbukraregular.ttf') format('truetype');
+}
+
+body {
+    margin: 0px;
+    font-family: '29LT Bukra', sans-serif;
+}
+
+.header-wrapper {
+    background-image: url("./images/header-bg.png");
+    background-position: center;
+    padding: 15px 100px;
+}
+
+.header {
+    display: flex;
+    color: #ffffff;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    margin: 0px 88px;
+}
+
+.header-links ul {
+    list-style: none;
+}
+
+.header-links ul li {
+    display: inline;
+    margin: 0px 35px;
+    font-size: 1rem;
+}
+
+.header-links ul .active {
+    color: #B89635;
+    font-weight: 700;
+}
