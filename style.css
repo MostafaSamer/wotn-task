@@ -184,3 +184,76 @@ body {
 .checkbox-container input[type="checkbox"]:checked + .custom-checkbox .check-icon {
     opacity: 1;
 }
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-info-image {
+    width: 108px;
+    height: 108px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    border: solid 2px #B89635;
+}
+
+.card-info-image img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%;
+    object-fit: cover; /* Crop the image to cover the container */
+    object-position: center center;
+}
+
+.card-info-name {
+    color: #333;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-top: 18px;
+}
+
+.card-info-status {
+    display: flex;
+    margin-top: 9px;
+    padding-bottom: 10px;
+    font-size: 1.125rem;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+
+.status-accepted {
+    color: #16D973;
+}
+
+.status-rejected {
+    color: #FF0000;
+}
+
+.status-accepted .status-dot {
+    background-color: #16D973;
+}
+
+.status-rejected .status-dot {
+    background-color: #FF0000;
+}
+
+.card-info-contact {
+    display: flex;
+    direction: ltr;
+    column-gap: 10px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.card-info-contact a {
+    color: #555;
+}
