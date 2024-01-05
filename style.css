@@ -24,7 +24,7 @@ body {
 .header-links {
     display: flex;
     align-items: center;
-    margin: 0px 88px;
+    margin: 0px 88px 0px 0px;
 }
 
 .header-links ul {
@@ -46,7 +46,7 @@ body {
 .header-title {
     margin: 40px 0px 51px;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #B89635;
 }
@@ -54,6 +54,6 @@ body {
 .header-title-2 {
     margin-top: 27px;
     color: #ffffff;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
 }
