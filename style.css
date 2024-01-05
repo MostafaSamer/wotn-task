@@ -119,6 +119,7 @@ button {
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -127,8 +128,9 @@ button {
     border-radius: 8px;
     border: 1px solid rgba(184, 150, 53, 0.26);
     background: #FFF;
-    width: 30%;
+    width: 29%;
     padding: 19px 17px 23px;
+    margin-bottom: 30px;
 }
 
 .card-header {
@@ -198,6 +200,7 @@ button {
 .card-info-image {
     width: 108px;
     height: 108px;
+    margin-top: 7px;
     overflow: hidden;
     position: relative;
     border-radius: 50%;
@@ -206,10 +209,8 @@ button {
 
 .card-info-image img {
     width: 100%;
-    /* Make the image fill the container */
     height: 100%;
     object-fit: cover;
-    /* Crop the image to cover the container */
     object-position: center center;
 }
 
@@ -314,4 +315,25 @@ button {
     font-size: 0.875rem;
     font-weight: 700;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .cards-wrapper {
+        padding: 35px 100px;
+    }
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .cards-wrapper {
+        padding: 35px 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
 }
