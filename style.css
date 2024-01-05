@@ -11,6 +11,8 @@ body {
 .header-wrapper {
     background-image: url("./images/header-bg.png");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 15px 100px;
 }
 
@@ -31,11 +33,27 @@ body {
 
 .header-links ul li {
     display: inline;
-    margin: 0px 35px;
+    margin-left: 35px;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .header-links ul .active {
     color: #B89635;
+    font-weight: 700;
+}
+
+.header-title {
+    margin: 40px 0px 51px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #B89635;
+}
+
+.header-title-2 {
+    margin-top: 27px;
+    color: #ffffff;
+    font-size: 32px;
     font-weight: 700;
 }
