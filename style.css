@@ -181,11 +181,11 @@ button {
     opacity: 0;
 }
 
-.checkbox-container input[type="checkbox"]:checked + .custom-checkbox {
+.checkbox-container input[type="checkbox"]:checked+.custom-checkbox {
     background-color: #B89635;
 }
 
-.checkbox-container input[type="checkbox"]:checked + .custom-checkbox .check-icon {
+.checkbox-container input[type="checkbox"]:checked+.custom-checkbox .check-icon {
     opacity: 1;
 }
 
@@ -205,9 +205,11 @@ button {
 }
 
 .card-info-image img {
-    width: 100%; /* Make the image fill the container */
+    width: 100%;
+    /* Make the image fill the container */
     height: 100%;
-    object-fit: cover; /* Crop the image to cover the container */
+    object-fit: cover;
+    /* Crop the image to cover the container */
     object-position: center center;
 }
 
@@ -260,6 +262,28 @@ button {
 
 .card-info-contact a {
     color: #555;
+}
+
+.card-personal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 18px 23px 0px;
+    padding: 17px;
+    background: rgba(184, 150, 53, 0.02);
+    border-top: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    font-size: 0.72rem;
+}
+
+.card-personal .card-personal-item {
+    flex: 0 0 50%;
+    text-align: start;
+}
+
+.card-personal .card-personal-item span {
+    font-weight: 700;
 }
 
 .card-links {
