@@ -93,7 +93,7 @@ button {
     .menu-toggle {
         right: 43px;
         top: 25px;
-        position: fixed;
+        position: absolute;
         display: flex;
         align-items: center;
         font-size: 2rem;
@@ -106,7 +106,7 @@ button {
 
     .header-links ul li {
         display: block;
-        margin: 10px 0;
+        margin: 14px 0;
     }
 }
 
@@ -377,6 +377,7 @@ button {
     padding: 39px 70px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 260px;
 }
 
 .modal-content .card-header {
@@ -430,4 +431,10 @@ button {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-content {
+        padding: 39px 40px;
+    }
 }
